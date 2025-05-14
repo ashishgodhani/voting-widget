@@ -1,0 +1,110 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  overflow-y: scroll;
+
+}
+
+.modal-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.modal-close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal-input,
+.modal-textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.modal-textarea {
+  resize: vertical;
+  min-height: 80px;
+  resize: none;
+}
+
+.preview-image {
+  width: 40%;
+  margin-top: 8px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  gap: 8px;
+}
+
+.modal-save-btn,
+.modal-cancel-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-save-btn {
+    margin-bottom: 8px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  background: #ffffff;
+  border: 1px solid #ba6b6b;
+  cursor: pointer;
+}
+
+.modal-cancel-btn {
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  background: #ffffff;
+  border: 1px solid #ba6b6b;
+  cursor: pointer;
+}

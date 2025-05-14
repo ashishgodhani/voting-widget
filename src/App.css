@@ -1,0 +1,121 @@
+.voting-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.loader-container p {
+  font-size: 3rem;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #fff #fff transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent #BA7E6B #CCA496;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+.loader::before {
+  width: 32px;
+  height: 32px;
+  border-color: #000000 #000000 transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+
+.header-info{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem
+}
+
+.header-select{
+  width: 110px;
+  height: 30px;
+  border-radius: 1rem;
+  padding: 0px 8px;
+}
+
+.reset-btn{
+   width:100px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+    border: 1px solid #ba7e6b;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s linear;
+    &:hover {
+        scale: 1.1;
+         box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+    rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+    rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+    rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+    rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    }
+}
+
+.add-data-btn{
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  width: 100%;
+}
+.add-card-btn{
+ height: 30px;
+ cursor: pointer;
+ padding: 0 8px;
+  border: 1px solid #ba7e6b;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.3s linear;
+  &:hover {
+      scale: 1.1;
+       box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+  rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+  rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+  rgba(75, 76, 80, 0.04) 0px 6px 6px -3px,
+  rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+  rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+  }
+}
+
+.no-data-container {
+  text-align: center;
+  padding: 60px 20px;
+  color: #555;
+}
